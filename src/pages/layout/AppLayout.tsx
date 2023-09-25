@@ -4,12 +4,13 @@ import { Outlet } from "react-router-dom";
 
 const AppLayout = () => {
   return (
-    <section>
+    <>
       <Header />
-      <div className="py-10"></div>
-      <Outlet />
-      <Footer />
-    </section>
+      <section className="px-4 md:px-12 lg:px-16 py-10">
+        <Outlet />
+      </section>
+      {/* <Footer /> */}
+    </>
   );
 };
 
