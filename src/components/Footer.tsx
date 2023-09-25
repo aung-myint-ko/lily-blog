@@ -3,8 +3,8 @@ import DonateButton from "@components/buttons/DonateButton";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className=" bg-slate-50 border-t border-t-gray-100 ">
-      <div className=" md:flex md:justify-between px-4 md:px-12 lg:px-20 pt-6 pb-5 md:pt-8 md:pb-7">
+    <footer className=" bg-slate-200 border-t border-t-gray-100 ">
+      <div className=" md:flex md:justify-between px-4 md:px-12 lg:px-16 pt-6 pb-5 md:pt-8 md:pb-7">
         <a href="/">
           <h1 className=" pb-3 md:pb-0 font-mooli text-2xl font-bold bg-gradient-to-r from-slate-950 to-blue-800 inline-block text-transparent bg-clip-text bg-300% animate-gradient ">
             Lily Blog

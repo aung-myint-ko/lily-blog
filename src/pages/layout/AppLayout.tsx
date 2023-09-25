@@ -9,7 +9,7 @@ const AppLayout = () => {
       <section className="px-4 md:px-12 lg:px-16 py-10">
         <Outlet />
       </section>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
