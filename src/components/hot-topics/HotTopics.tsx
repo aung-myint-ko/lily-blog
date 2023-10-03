@@ -19,15 +19,18 @@ const HotTopics = () => {
       </RoughNotation>
 
       <div className=" grid grid-cols-2 xl:grid-cols-3 gap-4">
-        <span className=" col-span-2 xl:row-span-2 xl:col-span-2">
-          <HeadlinePost />
+        <span className=" grid grid-cols-1 md:grid-cols-2 col-span-2 gap-4">
+          <span className=" md:col-span-2">
+            <HeadlinePost />
+          </span>
+          <span>
+            <SubHeadlinePost title="Hunt for Titanic sub and mortgage rates rise" />
+          </span>
+          <span>
+            <SubHeadlinePost title="Hunt for Titanic sub and mortgage rates rise" />
+          </span>
         </span>
-        <span className=" col-span-2 md:col-span-1 xl:col-span-1 ">
-          <SubHeadlinePost title="Hunt for Titanic sub and mortgage rates rise" />
-        </span>
-        <span className=" col-span-2 md:col-span-1 xl:col-span-1">
-          <SubHeadlinePost title="Hunt for Titanic sub and mortgage rates rise Hunt for Titanic sub and mortgage rates rise" />
-        </span>
+        <span className=" col-span-2 md:col-span-1 xl:col-span-1 h-fit "></span>
       </div>
     </>
   );
