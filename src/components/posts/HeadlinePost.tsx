@@ -3,8 +3,8 @@ import { SmallAvatar } from "@components/all-assets/Avatars";
 import { Tag } from "@components/posts/Tag";
 const HeadlinePost = () => {
   return (
-    <article className="w-full flex flex-col-reverse md:flex-row">
-      <div className=" md:max-w-sm lg:max-w-xs bg-gradient-to-tr from-cyan-50 to-blue-50 p-5">
+    <article className="w-full h-full flex flex-col-reverse md:flex-row ">
+      <div className=" md:max-w-sm lg:max-w-md xl:max-w-xs bg-gradient-to-tr from-cyan-50 to-blue-50 p-5">
         {/* Post Title */}
         <a href="/">
           <h1 className=" text-2xl font-bold tracking-wide font-rubik pb-3">
@@ -35,13 +35,14 @@ const HeadlinePost = () => {
         </a>
 
         {/* Category Tagname */}
-        <span>
+        <span className=" flex gap-2 items-center">
           <Tag name="Web Development" color={"blue"} />
+          <p className=" font-poppins text-xs text-gray-600">4 min read</p>
         </span>
       </div>
 
       {/* Post Image */}
-      <div className="  max-w-[500px] lg:h-[350px]">
+      <div className=" w-full">
         <a href="/">
           <img src={Test1} alt="test-1" className=" w-full h-full" />
         </a>
