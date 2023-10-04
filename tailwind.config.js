@@ -19,6 +19,9 @@ export default {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      colors: {
+        color1: "#1c1ca7",
+      },
       fontFamily: {
         mooli: ["Mooli", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],

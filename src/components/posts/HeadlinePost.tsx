@@ -44,7 +44,11 @@ const HeadlinePost = () => {
       {/* Post Image */}
       <div className=" w-full">
         <a href="/">
-          <img src={Test1} alt="test-1" className=" w-full h-full" />
+          <img
+            src={Test1}
+            alt="test-1"
+            className=" bg-slate-100 max-w-full h-full"
+          />
         </a>
       </div>
     </article>
