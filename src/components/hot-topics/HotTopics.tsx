@@ -5,7 +5,7 @@ import CategorizedHeadlinePost from "@components/posts/CategorizedHeadlinePost";
 
 const HotTopics = () => {
   return (
-    <>
+    <section>
       <RoughNotation
         type="underline"
         show={true}
@@ -58,7 +58,7 @@ const HotTopics = () => {
           />
         </span>
       </div>
-    </>
+    </section>
   );
 };
 
