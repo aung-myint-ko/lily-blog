@@ -1,0 +1,22 @@
+import { cn } from "@/libs/utils";
+
+type ButtonType = {
+  name: string;
+  classname?: string;
+};
+
+const Button = ({ name, classname = "" }: ButtonType) => {
+  return (
+    <a
+      href="/"
+      className={cn(
+        classname,
+        "block text-sm sm:text-base px-5 py-2 border border-gray-300 bg-blue-500 hover:bg-blue-600 text-white font-poppins rounded-full"
+      )}
+    >
+      {name}
+    </a>
+  );
+};
+
+export default Button;

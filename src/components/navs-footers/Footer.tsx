@@ -1,4 +1,4 @@
-import DonateButton from "@components/buttons/DonateButton";
+import Button from "@components/buttons/Button";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -15,7 +15,7 @@ const Footer = () => {
             Financial support is available for the long-term operation of Lily
             Blog productions.
           </p>
-          <DonateButton />
+          <Button name="Donate" classname="h-fit max-w-[100]" />
         </div>
       </div>
       <div></div>

@@ -1,5 +1,5 @@
 import { SearchDesktop, SearchMobile } from "@/components/all-assets/Search";
-import SignUpButton from "@/components/buttons/SignUpButton";
+import Button from "@/components/buttons/Button";
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
           <a href="/" className=" font-poppins hidden sm:block ">
             Sign In
           </a>
-          <SignUpButton />
+          <Button name="SingUp" />
         </div>
       </nav>
     </header>
