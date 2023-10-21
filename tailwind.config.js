@@ -42,5 +42,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
+  important: true,
 };

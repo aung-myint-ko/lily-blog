@@ -1,6 +1,8 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import AppLayout from "@pages/layout/AppLayout";
 import Home from "@pages/Home";
+import CreatePost from "@pages/CreatePost";
+import React from "react";
 
 function App() {
   return (
@@ -8,8 +10,8 @@ function App() {
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/test" element={<h1>Test</h1>} />
         </Route>
+        <Route path="/new-post" element={<CreatePost />} />
       </Routes>
     </BrowserRouter>
   );

@@ -11,7 +11,7 @@ const CategorizedHeadlinePost = ({ title, category, image = Test1 }: Props) => {
     <article className=" max-w-md w-full flex justify-between">
       <div className=" max-w-[250px]">
         {/* Post Title */}
-        <h1 className=" font-poppins font-semibold uppercase text-color1 pb-2">
+        <h1 className=" text-base font-poppins font-semibold uppercase text-color1 pb-2">
           {category}
         </h1>
         {/* Post Title */}

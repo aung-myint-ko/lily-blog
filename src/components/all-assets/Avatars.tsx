@@ -10,3 +10,15 @@ export const SmallAvatar = () => {
     </div>
   );
 };
+
+export const NormalAvatar = () => {
+  return (
+    <div className=" w-10 h-10 rounded-full shadow-lg border border-gray-100">
+      <img
+        src={Avatar1}
+        alt="avatar-1"
+        className=" w-full h-full rounded-full"
+      />
+    </div>
+  );
+};
