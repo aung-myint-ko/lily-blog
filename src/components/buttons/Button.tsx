@@ -10,8 +10,8 @@ const Button = ({ name, classname = "" }: ButtonType) => {
     <a
       href="/"
       className={cn(
-        classname,
-        "block text-sm sm:text-base px-5 py-2 border border-gray-300 bg-blue-500 hover:bg-blue-600 text-white font-poppins rounded-full"
+        "block text-sm sm:text-base border border-gray-300 bg-blue-500 hover:bg-blue-600 text-white font-poppins rounded-full px-5 py-2",
+        classname
       )}
     >
       {name}

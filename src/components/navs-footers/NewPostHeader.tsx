@@ -1,4 +1,4 @@
-import { NormalAvatar } from "@components/all-assets/Avatars";
+import Avatar from "@/components/all-assets/Avatar";
 
 const NewPostHeader = () => {
   return (
@@ -12,7 +12,7 @@ const NewPostHeader = () => {
         <button className=" block text-sm sm:text-base px-4 py-1 border border-gray-300 bg-blue-500 hover:bg-blue-600 text-white font-poppins rounded-full">
           Publish
         </button>
-        <NormalAvatar />
+        <Avatar classname="w-10 h-10" />
       </div>
     </header>
   );

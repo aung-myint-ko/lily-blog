@@ -1,7 +1,12 @@
+import ProfileContainer from "@/components/profile/ProfileContainer";
 import React from "react";
 
 const Profile = () => {
-  return <div>Profile</div>;
+  return (
+    <>
+      <ProfileContainer />
+    </>
+  );
 };
 
 export default Profile;

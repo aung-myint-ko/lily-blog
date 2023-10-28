@@ -1,5 +1,5 @@
 import Test1 from "@assets/test1.jpg";
-import { SmallAvatar } from "../all-assets/Avatars";
+import Avatar from "@/components/all-assets/Avatar";
 import { UilHeart } from "@iconscout/react-unicons";
 import { Tag } from "./Tag";
 
@@ -10,7 +10,7 @@ const NormalPost = () => {
         <span className=" flex items-center gap-x-1 ">
           {/* Author Avatar */}
           <a href="/">
-            <SmallAvatar />
+            <Avatar classname=" w-8 h-8" />
           </a>
           {/* Author Name */}
           <a href="/">
@@ -20,14 +20,14 @@ const NormalPost = () => {
           {/* Post Published Date */}
           <p className=" text-sm text-gray-600">Mar 13</p>
         </span>
-        <span className=" flex gap-x-2 items-center">
-          <Tag name="Math" color="gray" />
+        {/* <span className=" hidden sm:flex gap-x-2 items-center">
+          <Tag name="Math" color="bg-blue-200" />
           <p className=" font-poppins text-xs text-gray-600">4 min read</p>
-        </span>
+        </span> */}
       </div>
 
-      <section className=" flex">
-        <div className=" w-[80%]">
+      <section className=" flex gap-3 sm:gap-5">
+        <div className=" w-full">
           {/* Post Title */}
           <a href="/">
             <h1 className=" text-base sm:text-xl font-bold tracking-wide font-rubik pb-2">
@@ -35,16 +35,20 @@ const NormalPost = () => {
               Requests
             </h1>
             {/* Post Description */}
-            <p className=" hidden sm:block font-poppins text-gray-800 text-sm">
+            <p className=" hidden sm:block font-poppins text-gray-800 text-sm pb-2">
               After publishing a record number of articles on comparing
               performance of various technologies like Node.js, Deno, Bun, Rust,
               Go, Spring, Python, etc. performance of various technologies like
               Node.js, Deno, Bun, Rust,
             </p>
           </a>
+          <span className="flex gap-x-2 items-center">
+            <Tag name="Math" color="bg-blue-200" />
+            <p className=" font-poppins text-xs text-gray-600">4 min read</p>
+          </span>
         </div>
 
-        <div className=" w-[20%] ">
+        <div className="max-w-[70px] min-w-[70px] sm:max-w-[128px] sm:min-w-[128px]">
           <a href="/">
             <img
               src={Test1}

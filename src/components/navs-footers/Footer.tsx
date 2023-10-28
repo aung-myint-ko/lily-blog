@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="bg-slate-200 border-t border-t-gray-100 ">
-        <div className=" max-w-[1440px] md:flex md:justify-between px-4 md:px-12 lg:px-16 2xl:mx-auto pt-6 pb-5 md:pt-8 md:pb-7">
+        <div className=" max-w-[1440px] md:flex md:justify-between px-4 lg:px-10 2xl:mx-auto pt-6 pb-5 md:pt-8 md:pb-7">
           <a href="/">
             <span className=" pb-3 md:pb-0 font-mooli text-2xl font-bold bg-gradient-to-r from-slate-950 to-blue-800 inline-block text-transparent bg-clip-text bg-300% animate-gradient ">
               Lily Blog
@@ -15,7 +15,7 @@ const Footer = () => {
             Financial support is available for the long-term operation of Lily
             Blog productions.
           </p>
-          <Button name="Donate" classname="h-fit max-w-[100]" />
+          <Button name="Donate" classname=" inline-block h-fit max-w-[100]" />
         </div>
       </div>
       <div></div>

@@ -1,3 +1,5 @@
+import { cn } from "@/libs/utils";
+
 type Tags = {
   name: string;
   color: string;
@@ -6,9 +8,10 @@ type Tags = {
 export const Tag = ({ name, color }: Tags) => {
   return (
     <span
-      className={` ${
-        color == "blue" ? "text-white bg-blue-500" : " bg-gray-200"
-      } font-poppins font-extralight text-xs  px-2 py-1 rounded-full`}
+      className={cn(
+        "inline-block font-poppins font-extralight text-xs px-2 py-1 mr-1 mb-1 rounded-full cursor-pointer bg-opacity-70 hover:bg-opacity-95",
+        color
+      )}
     >
       {name}
     </span>

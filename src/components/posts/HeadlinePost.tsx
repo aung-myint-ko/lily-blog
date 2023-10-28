@@ -1,5 +1,5 @@
 import Test1 from "@assets/test1.jpg";
-import { SmallAvatar } from "@components/all-assets/Avatars";
+import Avatar from "@/components/all-assets/Avatar";
 import { Tag } from "@components/posts/Tag";
 const HeadlinePost = () => {
   return (
@@ -15,7 +15,7 @@ const HeadlinePost = () => {
         <span className=" font-poppins flex items-center gap-x-1 pb-3">
           {/* Author Avatar */}
           <a href="/">
-            <SmallAvatar />
+            <Avatar classname=" w-8 h-8" />
           </a>
           {/* Author Name */}
           <a href="/">
@@ -36,8 +36,8 @@ const HeadlinePost = () => {
 
         {/* Category Tagname */}
         <span className=" flex gap-2 items-center">
-          <Tag name="Web Development" color={"blue"} />
-          <p className=" font-poppins text-xs text-gray-600">4 min read</p>
+          <Tag name="Web Development" color="bg-gray-200" />
+          <p className=" font-poppins text-xs text-gray-600 ">4 min read</p>
         </span>
       </div>
 
