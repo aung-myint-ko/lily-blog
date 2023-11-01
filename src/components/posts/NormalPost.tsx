@@ -2,10 +2,15 @@ import Test1 from "@assets/test1.jpg";
 import Avatar from "@/components/all-assets/Avatar";
 import { UilHeart } from "@iconscout/react-unicons";
 import { Tag } from "./Tag";
+import { cn } from "@/libs/utils";
 
-const NormalPost = () => {
+type NormalPostType = {
+  classname?: string;
+};
+
+const NormalPost = ({ classname = "" }: NormalPostType) => {
   return (
-    <article className=" max-w-[800px] ">
+    <article className={cn(" max-w-[800px] ", classname)}>
       <div className=" font-poppins flex items-center gap-x-5 sm:gap-x-7 pb-3">
         <span className=" flex items-center gap-x-1 ">
           {/* Author Avatar */}
