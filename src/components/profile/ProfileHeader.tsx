@@ -4,7 +4,7 @@ import { Tag } from "../posts/Tag";
 
 const ProfileHeader = () => {
   return (
-    <section className="px-2 py-4 sm:p-5 bg-slate-50 border border-gray-100 rounded">
+    <section>
       <header className=" hidden sm:flex justify-normal items-end sm:gap-x-10 mb-2">
         <h1 className=" font-rubik text-xl sm:text-3xl font-bold ">
           Lucifer David

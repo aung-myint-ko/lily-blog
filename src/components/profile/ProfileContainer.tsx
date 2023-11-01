@@ -1,13 +1,15 @@
 import AboutAuthor from "@components/profile/AboutAuthor";
 import ProfileHeader from "@components/profile/ProfileHeader";
 import NormalPost from "../posts/NormalPost";
+import PostsAboutNavigator from "./PostsAboutNavigator";
 
 const ProfileContainer = () => {
   return (
-    <section className=" w-full flex flex-col md:flex-row md:gap-x-3 lg:gap-x-8">
+    <section className=" w-full flex flex-col md:flex-row md:gap-x-3 lg:gap-x-10">
       <div className="  w-full">
         <ProfileHeader />
-        <div className=" sm:px-5 pt-10 flex flex-col gap-y-8">
+        <PostsAboutNavigator />
+        <div className=" pt-10 flex flex-col gap-y-8">
           <NormalPost classname=" max-w-none" />
           <NormalPost classname=" max-w-none" />
           <NormalPost classname=" max-w-none" />
